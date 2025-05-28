@@ -5,17 +5,12 @@ import seaborn as sns
 import pickle
 import numpy as np
 
-# Setup halaman (harus sebelum perintah Streamlit lain)
 st.set_page_config(page_title="Employee Attrition Dashboard", layout="wide")
 st.title("Employee Attrition Dashboard")
 
-# Load data
 df = pd.read_csv("employee_data.csv")
-
-# Preprocessing untuk tampilan dashboard (bukan untuk prediksi)
 df['Attrition'] = df['Attrition'].map({1.0: "Yes", 0.0: "No"})
 
-# Sidebar filter
 st.sidebar.header("Filter Data")
 departments = st.sidebar.multiselect(
     "Department", options=df["Department"].dropna().unique(), default=df["Department"].dropna().unique()
