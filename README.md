@@ -53,7 +53,7 @@ Dashboard dibuat menggunakan **Streamlit** dan menyediakan fitur berikut:
 - **Form Prediksi Interaktif**: User dapat mengisi data karyawan baru dan mendapatkan hasil prediksi apakah karyawan tersebut berisiko keluar atau tidak.
 
 **Link Dashboard (Deploy Streamlit):**  
-ceciliaagnes04/Edutech-Project
+[ceciliaagnes04/Edutech-Project](https://edutech-project.streamlit.app/)
 
 ## EDA (Exploratory Data Analysis)
 
